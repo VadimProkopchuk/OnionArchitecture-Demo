@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OA.Infrastructure.Business"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OA.Infrastructure.DependencyResolver", "OA.Infrastructure.DependencyResolver\OA.Infrastructure.DependencyResolver.csproj", "{55153443-29D0-4689-8795-04BE28EA7F42}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OA.Infrastructure.Models", "OA.Infrastructure.Models\OA.Infrastructure.Models.csproj", "{C81CCB86-D9DE-4C70-8A00-6CE1DBFC5C65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OA.Infrastructure.Mapper", "OA.Infrastructure.Mapper\OA.Infrastructure.Mapper.csproj", "{73CD8702-A3F2-43E9-8BBE-E915A790CE38}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +69,14 @@ Global
 		{55153443-29D0-4689-8795-04BE28EA7F42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55153443-29D0-4689-8795-04BE28EA7F42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55153443-29D0-4689-8795-04BE28EA7F42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C81CCB86-D9DE-4C70-8A00-6CE1DBFC5C65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C81CCB86-D9DE-4C70-8A00-6CE1DBFC5C65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C81CCB86-D9DE-4C70-8A00-6CE1DBFC5C65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C81CCB86-D9DE-4C70-8A00-6CE1DBFC5C65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73CD8702-A3F2-43E9-8BBE-E915A790CE38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73CD8702-A3F2-43E9-8BBE-E915A790CE38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73CD8702-A3F2-43E9-8BBE-E915A790CE38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73CD8702-A3F2-43E9-8BBE-E915A790CE38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,5 +91,7 @@ Global
 		{F6952872-1819-4FB7-82DE-8BF670D50386} = {FC38698B-E474-4E71-8B51-FEC4817A1F9F}
 		{46D43BA3-6D00-47A1-A1A0-A59913A4CC0A} = {F69A3772-5971-4A23-A019-F128E5C2C8FF}
 		{55153443-29D0-4689-8795-04BE28EA7F42} = {F69A3772-5971-4A23-A019-F128E5C2C8FF}
+		{C81CCB86-D9DE-4C70-8A00-6CE1DBFC5C65} = {F69A3772-5971-4A23-A019-F128E5C2C8FF}
+		{73CD8702-A3F2-43E9-8BBE-E915A790CE38} = {F69A3772-5971-4A23-A019-F128E5C2C8FF}
 	EndGlobalSection
 EndGlobal
