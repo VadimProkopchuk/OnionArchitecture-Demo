@@ -3,7 +3,6 @@ using OA.Infrastructure.Business;
 using OA.Infrastructure.Data;
 using OA.Infrastructure.Data.Provider;
 using OA.Infrastructure.Data.Provider.Interfaces;
-using System;
 using System.Linq;
 
 namespace OA.Infrastructure.DependencyResolver
@@ -12,8 +11,8 @@ namespace OA.Infrastructure.DependencyResolver
     {
         public static void ConfigureAutofac(ContainerBuilder builder)
         {
-            builder.RegisterType<IContextProvider<Guid>>()
-                   .As<DbContextProvider>()
+            builder.RegisterGeneric(typeof(DbContextProvider<>))
+                   .As(typeof(IContextProvider<>))
                    .InstancePerLifetimeScope();
 
             builder.RegisterAssemblyTypes(typeof(BookRepository).Assembly)
