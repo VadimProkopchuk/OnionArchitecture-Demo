@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OA.Infrastructure.Models", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OA.Infrastructure.Mapper", "OA.Infrastructure.Mapper\OA.Infrastructure.Mapper.csproj", "{73CD8702-A3F2-43E9-8BBE-E915A790CE38}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OA.WebApi", "OA.WebApi\OA.WebApi.csproj", "{ED3F79EB-707F-4710-93F0-101C3643E9B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{73CD8702-A3F2-43E9-8BBE-E915A790CE38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73CD8702-A3F2-43E9-8BBE-E915A790CE38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73CD8702-A3F2-43E9-8BBE-E915A790CE38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED3F79EB-707F-4710-93F0-101C3643E9B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED3F79EB-707F-4710-93F0-101C3643E9B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED3F79EB-707F-4710-93F0-101C3643E9B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED3F79EB-707F-4710-93F0-101C3643E9B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
