@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace OA.Infrastructure.Data.Provider
 {
-    public class DbContextProvider : DbContext, IContextProvider<Guid>
+    public class DbContextProvider<TKey> : DbContext, IContextProvider<TKey> where TKey : struct
     {
         static DbContextProvider()
         {
@@ -17,7 +17,7 @@ namespace OA.Infrastructure.Data.Provider
 
         public DbContextProvider() : base("ConnectionName") { }
 
-        public DbSet<TEntity> GetSet<TEntity>() where TEntity : class, IBaseEntity<Guid> => base.Set<TEntity>();
+        public DbSet<TEntity> GetSet<TEntity>() where TEntity : class, IBaseEntity<TKey> => base.Set<TEntity>();
 
         public int Save()
         {
@@ -40,9 +40,9 @@ namespace OA.Infrastructure.Data.Provider
 
         private void TimeStamp()
         {
-            foreach (var entity in ChangeTracker.Entries().Where(e => e.Entity is IBaseEntity<Guid>))
+            foreach (var entity in ChangeTracker.Entries().Where(e => e.Entity is IBaseEntity<TKey>))
             {
-                var changeEntity = (IBaseEntity<Guid>)entity.Entity;
+                var changeEntity = (IBaseEntity<TKey>)entity.Entity;
 
                 switch (entity.State)
                 {
